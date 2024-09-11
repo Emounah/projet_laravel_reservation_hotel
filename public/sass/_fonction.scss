@@ -1,0 +1,44 @@
+@mixin flexRow($alignItems,$justifyContent){
+    display: flex;
+    flex-direction: row;
+    align-items: $alignItems;
+    justify-content: $justifyContent;
+    flex-wrap: wrap;
+}
+@mixin flexColumnSimple(){
+    display: flex;
+    flex-direction: column;
+}
+@mixin flexColumn($alignItems,$justifyContent){
+    display: flex;
+    flex-direction: column;
+    align-items: $alignItems;
+    justify-content: $alignItems;
+    flex-wrap: wrap;
+}
+
+@mixin widthHeight ($width,$height){
+    width: $width;
+    height: $height;
+}
+
+@mixin positionTopLeft($position,$top,$left){
+    position: $position;
+    top: $top;
+    left: $left;
+}
+@mixin positionTopRight($position,$top,$right){
+    position: $position;
+    top: $top;
+    right: $right;
+}
+@mixin positionBottomLeft($position,$bottom,$left){
+    position: $position;
+    bottom: $bottom;
+    left: $left;
+}
+@mixin positionBottomRight($position,$bottom,$right){
+    position: $position;
+    bottom: $bottom;
+    right: $right;
+}

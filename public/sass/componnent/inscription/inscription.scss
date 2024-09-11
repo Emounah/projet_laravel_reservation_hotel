@@ -1,0 +1,332 @@
+.containere{
+    padding: 40px;
+    border-radius: 20px;
+    border: 8px solid $primaryColorDark;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.35),inset -5px -5px 15px rgba(255, 255, 255, 0.1),inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+    .form{
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+        .form_block{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+        }
+        h2{
+            color: $extraLight;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            font-size: 40px;
+            @media (max-width:4000px) {
+                font-size: 6rem;
+            }
+        
+            @media (max-width:3300px) {
+                font-size: 5rem;
+            }
+        
+            @media (max-width:2500px) {
+                font-size: 4rem;
+            }
+        
+            @media (max-width:2000px) {
+                font-size: 3rem;
+            }
+            @media (max-width:1600px) {
+                font-size: 40px;
+            }
+        }
+       
+        .inputBox{
+            position: relative;
+            width: 400px;
+            margin: 20px 0;
+            @media (max-width:4000px) {
+              width: 1000px;
+              margin: 20px 0;
+            }
+        
+            @media (max-width:3300px) {
+                width: 900px;
+                margin: 20px 0;
+            }
+        
+            @media (max-width:2500px) {
+                width: 600px;
+                margin: 20px 0;
+            }
+            @media (max-width:1600px) {
+                position: relative;
+                width: 400px;
+                margin: 20px 0;
+            }
+            input{
+                padding: 12px 10px 12px 48px;
+                border: none;
+                width: 100%;
+                background: $primaryColor;
+                // border: 1px solid $primaryColorDark;
+                color: #fff;
+                font-weight: 300;
+                border-radius: 25px;
+                font-size: 20px;
+                box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.35);
+                transition: 0.5s;
+                outline: none;
+                @media (max-width:4000px) {
+                    padding: 30px 10px 30px 8rem;
+                    font-size: 4rem;
+                  }
+              
+                  @media (max-width:3300px) {
+                    font-size: 3rem;
+                  }
+              
+                  @media (max-width:2500px) {
+                    padding: 25px 10px 25px 6rem;
+                    font-size: 2.5rem;
+                  }
+              
+                  @media (max-width:1600px) {
+                    padding: 12px 10px 12px 48px;
+                    border: none;
+                    width: 100%;
+                    background: $primaryColor;
+                    // border: 1px solid $primaryColorDark;
+                    color: #fff;
+                    font-weight: 300;
+                    border-radius: 25px;
+                    font-size: 20px;
+                    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.35);
+                    transition: 0.5s;
+                    outline: none;
+                  }
+                @media (max-width:492px) {
+                    font-size: 16px;
+                }
+                @media (max-width:420px) {
+                    font-size: 12px;
+                }
+                @media (max-width:360px) {
+                    font-size: 10px;
+                }
+            }
+            span{
+                position: absolute;
+                left: 0;
+                padding: 12px 10px 12px 48px;
+                pointer-events: none;
+                font-size: 20px;
+                font-weight: 300;
+                transition: 0.5s;
+                letter-spacing: 0.05em;
+                color: $textLight;
+                @media (max-width:4000px) {
+                    font-size: 4rem;
+                    padding: 30px 10px 0 8rem;
+                  }
+              
+                  @media (max-width:3300px) {
+                    font-size: 3rem;
+                  }
+              
+                  @media (max-width:2500px) {
+                    font-size: 2rem;
+                    padding: 25px 10px 0 6rem;
+                  }
+              
+                  @media (max-width:1600px) {
+                    position: absolute;
+                    left: 0;
+                    padding: 12px 10px 12px 48px;
+                    pointer-events: none;
+                    font-size: 20px;
+                    font-weight: 300;
+                    transition: 0.5s;
+                    letter-spacing: 0.05em;
+                    color: $textLight;
+                  }
+                @media (max-width:492px) {
+                    font-size: 16px;
+                }
+                @media (max-width:420px) {
+                    font-size: 12px;
+                }
+                @media (max-width:360px) {
+                    font-size: 10px;
+                }
+            }
+            .inputDate{
+                color: $extraLight;
+                // border: 1px solid $primaryColorDark;
+                background: $primaryColor;
+                transform: translateX(25px) translateY(-10px);
+                font-size: 16px;
+                padding: 0 8px;
+                border-radius: 10px;
+                letter-spacing: 0.1em;
+                @media (max-width:4000px) {
+                    font-size: 3.5rem;
+                    transform: translateX(25px) translateY(-50px);
+                  }
+              
+                  @media (max-width:3300px) {
+                    font-size: 2.5rem;
+                    transform: translateX(25px) translateY(-40px);
+                  }
+              
+                  @media (max-width:1600px) {
+                    color: $extraLight;
+                    // border: 1px solid $primaryColorDark;
+                    background: $primaryColor;
+                    transform: translateX(25px) translateY(-10px);
+                    font-size: 16px;
+                    padding: 0 8px;
+                    border-radius: 10px;
+                    letter-spacing: 0.1em;
+                  }
+                @media (max-width:492px) {
+                    font-size: 16px;
+                }
+                @media (max-width:420px) {
+                    font-size: 12px;
+                }
+                @media (max-width:360px) {
+                    font-size: 10px;
+                }
+            }
+            i{
+                position: absolute;
+                top: 15px;
+                left: 16px;
+                width: 25px;
+                padding: 2px 0;
+                padding-right:8px;
+                color: $extraLight;
+                border-right: 1px solid $extraLight;
+                @media (max-width:4000px) {
+                    font-size: 4rem;
+                    border-right: .2rem solid $extraLight;
+                    padding-right:5rem;
+                    top: 30px;
+                  }
+              
+                  @media (max-width:3300px) {
+                    font-size: 3rem;
+                  }
+              
+                  @media (max-width:2500px) {
+                    font-size: 2.5rem;
+                    top: 25px;
+                    padding-right:4rem;
+                  }
+              
+                  @media (max-width:1600px) {
+                    position: absolute;
+                    top: 15px;
+                    left: 16px;
+                    width: 25px;
+                    padding: 2px 0;
+                    padding-right:8px;
+                    color: $extraLight;
+                    border-right: 1px solid $extraLight;
+                    font-size: 16px;
+                  }
+            }
+            &.inputBoxSubmit{
+               margin: 0 auto;
+            @media (max-width:555px) {
+                width: 200px;
+            }
+            @media (max-width:331px) {
+                width: 100px;
+            }
+            }
+            input[type="submit"]{
+                width: 100%;
+                background: linear-gradient(to left,$primaryColorDark,$primaryColor);
+                color: $extraLight;
+                padding: 10px 0;
+                font-weight: 500;
+                // margin: 0 20px;
+                cursor: pointer;
+                box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.35),inset -5px -5px 15px rgba(255, 255, 255, 0.1),inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+            }
+        }
+        p{
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 20px;
+            font-weight: 300;
+            @media (max-width:4000px) {
+                font-size: 5rem;
+            }
+        
+            @media (max-width:3300px) {
+                font-size: 4rem;
+            }
+        
+            @media (max-width:2500px) {
+                font-size: 3rem;
+            }
+        
+            @media (max-width:2000px) {
+                font-size: 2rem;
+            }
+            @media (max-width:1600px) {
+                font-size: 20px;
+            }
+           a{
+                font-weight: 500;
+                color:$extraLight;
+                cursor: pointer;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .form .inputBox input:valid ~ span,
+    .form .inputBox input:focus ~ span{
+    color: $extraLight;
+    // border: 1px solid $primaryColorDark;
+    background: $primaryColor;
+    transform: translateX(25px) translateY(-10px);
+    font-size: 16px;
+    padding: 0 8px;
+    border-radius: 10px;
+    letter-spacing: 0.1em;
+    @media (max-width:4000px) {
+        font-size: 3.5rem;
+        transform: translateX(25px) translateY(-50px);
+      }
+  
+      @media (max-width:3300px) {
+        font-size: 2.5rem;
+        transform: translateX(25px) translateY(-40px);
+      }
+  
+      @media (max-width:1600px) {
+        color: $extraLight;
+        // border: 1px solid $primaryColorDark;
+        background: $primaryColor;
+        transform: translateX(25px) translateY(-10px);
+        font-size: 16px;
+        padding: 0 8px;
+        border-radius: 10px;
+        letter-spacing: 0.1em;
+      }
+    @media (max-width:420px) {
+        font-size: 12px;
+    }
+    @media (max-width:360px) {
+        font-size: 10px;
+    }
+}
+
+}

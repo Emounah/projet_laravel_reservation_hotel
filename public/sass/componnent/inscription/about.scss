@@ -1,0 +1,92 @@
+.formMdp{
+    display: none;
+}
+.btnPlus{
+    position: relative;
+    width: 100%;
+    .btnPlusFont{
+        cursor: pointer;
+        // border: .2rem solid black;
+        display: inline-block;
+        i{
+            color: $extraLight;
+            font-size: 40px;
+            transition: .5s;
+            @media (max-width:4000px){
+                font-size: 6rem;
+            }
+            @media (max-width:2500px){
+                font-size: 5rem;
+            }
+            @media (max-width:2000px){
+                font-size: 4rem;
+            }
+            @media (max-width:1600px){
+                font-size: 40px;
+            }
+        }
+        &:hover{
+            i{
+                transform: scale(1.2);
+                transition: .5s;
+            }
+        }
+    }
+   .contonair_hotel{
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,20%);
+    z-index: 200;
+    background: $primaryColor;
+    overflow-x:auto;
+    border-radius: 20px;
+    &.contonair_hotel_flex{
+        display: block;
+    }
+      table{
+        width: 100%;
+  
+        th, td {
+            border-bottom: 1px solid #ddd;
+            padding: 15px;
+            text-align: left;
+          }
+          th{
+            color: $extraLight;
+            font-size: 25px;
+            @media (max-width:4000px){
+                font-size: 4rem;
+            }
+            @media (max-width:2500px){
+                font-size: 3rem;
+            }
+            @media (max-width:2000px){
+                font-size: 2rem;
+            }
+            @media (max-width:1600px){
+                font-size: 25px;
+            }
+          }
+          td{
+            color: $textLight;
+            font-size: 20px;
+            @media (max-width:4000px){
+                font-size: 3.5rem;
+            }
+            @media (max-width:2500px){
+                font-size: 2.5rem;
+            }
+            @media (max-width:2000px){
+                font-size: 1.5rem;
+            }
+            @media (max-width:1600px){
+                font-size: 25px;
+            }
+          }
+      }
+   }
+}
+
